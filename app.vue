@@ -78,7 +78,7 @@ export default defineComponent({
     }
   },
   async mounted() {
-    this.polyfire = PolyfireClientBuilder({ project: 'obsidianchat_118' })
+    this.polyfire = PolyfireClientBuilder({ project: '<APP_ID>' })
 
     this.isAuthenticated = await this.polyfire.auth.init()
     if (!this.isAuthenticated) {
